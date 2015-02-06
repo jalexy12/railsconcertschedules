@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+concert1 = Concert.create({name: "Concert 1", date: Date.today,  artist: "2chainz", venue: "O2 Arena", city: "Miami", ticketprice: 50,  description: "Description"})
+concert2 = Concert.create({name: "Concert 2", date: Date.today,  artist: "2chainz", venue: "O2 Arena", city: "Miami", ticketprice: 50, description: "Description"}) 
+concert3 = Concert.create({name: "Concert 3", date: Date.today,  artist: "2chainz", venue: "O2 Arena", city: "Miami", ticketprice: 50, description: "Hidescription"})
+concert4 = Concert.create({name: "Concert 4", date: Date.today, artist: "2chainz", venue: "O2 Arena", city: "Miami", ticketprice: 50, description: "Description"})
+concert5 = Concert.create({name: "Concert 5", date: Date.today,  artist: "2chainz", venue: "O2 Arena", city: "Miami", ticketprice: 50, description: "Description"})
+concert6 = Concert.create({name: "Concert 6", date: Date.today,  artist: "2chainz", venue: "O2 Arena", city: "Miami", ticketprice: 50, description: "Description"}) 
+concert7 = Concert.create({name: "Concert 7", date: Date.today,  artist: "2chainz", venue: "O2 Arena", city: "Miami", ticketprice: 50, description: "Hidescription"})
+concert8 = Concert.create({name: "Concert 8", date: Date.today, artist: "2chainz", venue: "O2 Arena", city: "Miami", ticketprice: 50, description: "Description"})

@@ -1,0 +1,21 @@
+
+<ul>
+	<% @concerts.each do |concert| %>
+		<br>
+		<li><%= link_to(concert.name, concert_path(concert)) %>
+		<br>
+		<%= concert.date %>
+		<%= concert.artist %>
+		<br>
+		<%= concert.venue %>
+		<%= concert.city %> 
+		<br>
+		<%= concert.ticketprice %>
+		<br>
+		<%= concert.description %></li>
+		<%= link_to("Edit", edit_concert_path(concert)) %>
+		<%= link_to("Delete", concert_path(concert), method: :delete, data: { confirm: "Are you sure?" }) %>
+		<br>
+	<% end %>
+
+<%= link_to("Home", concerts_path) %>

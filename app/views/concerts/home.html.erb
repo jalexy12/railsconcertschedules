@@ -1,0 +1,7 @@
+<h1> Home Page </h1>
+<h4> Concerts today </h4>
+
+<% @concerts.each do |concert| %>
+	<%= link_to(concert.name, concert_path(concert)) %>
+	<br>
+<% end %>
