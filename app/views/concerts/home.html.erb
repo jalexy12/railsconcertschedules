@@ -4,4 +4,6 @@
 <% @concerts.each do |concert| %>
 	<%= link_to(concert.name, concert_path(concert)) %>
 	<br>
+	
 <% end %>
+<%= link_to("Concert index", concerts_path) %>

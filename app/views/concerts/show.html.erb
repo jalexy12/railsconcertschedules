@@ -1,14 +1,18 @@
+<div class="printconcerts container">
 	<h1><%= "Concert Number: #{params[:id]}" %></h1>
 	
 	<b><%= @concert.name %></b>
 		<br>
-		<%= @concert.date %>
+		<%= @concert.date.strftime("%m/%d/%Y")  %>
 		<%= @concert.artist %>
 		<br>
 		<%= @concert.venue %>
 		<%= @concert.city %> 
 		<br>
-		<%= @concert.ticketprice %>
+		<%= "$#{@concert.ticketprice}" %>
+		<br>
 		<%= @concert.description %></li>
 		<br>
-	
+	<%= link_to("Home", concerts_path) %>
+
+</div>

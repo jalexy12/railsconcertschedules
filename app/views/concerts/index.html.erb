@@ -4,7 +4,7 @@
 		<br>
 		<li><%= link_to(concert.name, concert_path(concert)) %>
 		<br>
-		<%= concert.date %>
+		<%= concert.date.strftime("%m/%d/%Y")  %>
 		<%= concert.artist %>
 		<br>
 		<%= concert.venue %>
