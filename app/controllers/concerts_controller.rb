@@ -9,6 +9,7 @@ class ConcertsController < ApplicationController
 	def home
 		today = Date.today
 		@concerts = Concert.where("date = ?", today)
+		@monthsconcerts = Concert.concerts_for(today)
 	end
 
 	def show

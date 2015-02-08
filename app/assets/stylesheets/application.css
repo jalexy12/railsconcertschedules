@@ -18,6 +18,8 @@
 }
 html, body {
 	height: 100%;
+	background-color: #EFFBF8;
+	
 }
 .wrapper {
 	min-height: 100%;
@@ -29,4 +31,26 @@ html, body {
 	height: 155px; /* .push must be the same height as .footer */
 }
 
-/*
+.sidebar{
+	background-color: #E0F2F7;
+	width: auto;
+	margin-left: 20px;
+}
+
+.concertstoday{
+	margin-left: 150px;
+}
+
+.concerts{
+	margin-left: 20px;
+	background-color: #E0F2F7;
+	
+}
+
+.heading{
+	margin-left: 50px;
+	float: right;
+}
+.hometoprow{
+	margin-top: 15px;
+}

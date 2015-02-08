@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<div class="container-fluid">
   <title>ConcertApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<header> Welcome to the concert finding app </header>
 <body>
 <div class="wrapper">
 	<%= yield %>	
 	<div class="push"></div>
-</div>
-
-<div class="footer"> 
+	<div class="footer"> 
 	Copyright Josh Alexy 2015
 </div>
+</div>
+
+
+</div>
+
 </body>
 
 </html>
